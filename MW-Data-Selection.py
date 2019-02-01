@@ -2,7 +2,7 @@
 import mne
 import numpy as np
 
-fname = 'D:\Mind wandering\sourcedata-20181112T195058Z-001\sourcedata\sub-02\eeg\sub-02_ses-11_task-BreathCounting_eeg.bdf'
+fname = '...\sourcedata\sub-01\eeg\sub-01_ses-01_task-BreathCounting_eeg.bdf'
 raw = mne.io.read_raw_edf(fname,preload=True)
 
 events = mne.find_events(raw, initial_event=True)
